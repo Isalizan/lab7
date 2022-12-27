@@ -1,0 +1,96 @@
+>>>hostname en ibsen: 
+
+ibsen
+
+>>>hostname en el contenedor my-python.sif: 
+
+ibsen
+
+>>>cat /etc/os-release en ibsen: 
+
+NAME="CentOS Linux"
+VERSION="8 (Core)"
+ID="centos"
+ID_LIKE="rhel fedora"
+VERSION_ID="8"
+PLATFORM_ID="platform:el8"
+PRETTY_NAME="CentOS Linux 8 (Core)"
+ANSI_COLOR="0;31"
+CPE_NAME="cpe:/o:centos:centos:8"
+HOME_URL="https://www.centos.org/"
+BUG_REPORT_URL="https://bugs.centos.org/"
+
+CENTOS_MANTISBT_PROJECT="CentOS-8"
+CENTOS_MANTISBT_PROJECT_VERSION="8"
+REDHAT_SUPPORT_PRODUCT="centos"
+REDHAT_SUPPORT_PRODUCT_VERSION="8"
+
+
+>>>cat /etc/os-release en el contenedor my-python.sif: 
+
+PRETTY_NAME="Debian GNU/Linux 11 (bullseye)"
+NAME="Debian GNU/Linux"
+VERSION_ID="11"
+VERSION="11 (bullseye)"
+VERSION_CODENAME=bullseye
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"
+
+>>>pwd en ibsen: 
+
+/home/alumno14/lab7-singularity/lab7
+
+>>>pwd en el contenedor my-python.sif: 
+
+/home/alumno14/lab7-singularity/lab7
+
+>>>ls -l en ibsen: 
+
+total 12
+drwxrwxr-x. 2 alumno14 alumno14  151 dic 24 01:12 blast
+-rwxrwxr-x. 1 alumno14 alumno14 1279 dic 23 18:27 manejando_singularity.sh
+-rw-rw-r--. 1 alumno14 alumno14 1022 dic 27 11:56 output_manejando_singularity
+-rw-rw-r--. 1 alumno14 alumno14    0 dic 27 11:55 output_manejando_singularity.txt
+-rw-rw-r--. 1 alumno14 alumno14   92 dic 23 12:47 README.md
+drwxrwxr-x. 2 alumno14 alumno14   27 dic 23 13:12 singularity
+drwxrwxr-x. 2 alumno14 alumno14   74 dic 23 12:16 source
+
+>>>ls -l en el contenedor my-python.sif: 
+
+total 12
+-rw-rw-r--. 1 alumno14 alumno14   92 Dec 23 12:47 README.md
+drwxrwxr-x. 2 alumno14 alumno14  151 Dec 24 01:12 blast
+-rwxrwxr-x. 1 alumno14 alumno14 1279 Dec 23 18:27 manejando_singularity.sh
+-rw-rw-r--. 1 alumno14 alumno14 1547 Dec 27 11:56 output_manejando_singularity
+-rw-rw-r--. 1 alumno14 alumno14    0 Dec 27 11:55 output_manejando_singularity.txt
+drwxrwxr-x. 2 alumno14 alumno14   27 Dec 23 13:12 singularity
+drwxrwxr-x. 2 alumno14 alumno14   74 Dec 23 12:16 source
+
+>>>version de python en ibsen: 
+
+Python 3.7.7 :: Intel(R) Corporation
+
+>>>version de python en el contenedor my-python.sif: 
+
+Python 3.7.16
+
+>>>kmer-solution.ipynb en el subdirectorio /socurce: 
+
+[22;0t]0;IPython: lab7-singularity/lab7Start
+Number of generated k-mers: 268435456
+
+757 ms ± 7.81 ms per loop (mean ± std. dev. of 2 runs, 1 loop each)
+
+Finish!
+
+>>>kmer-solution.ipynb en el subdirectorio /home del contenedor my-python.sif: 
+
+[22;0t]0;IPython: lab7-singularity/lab7Start
+Number of generated k-mers: 268435456
+
+750 ms ± 99.7 µs per loop (mean ± std. dev. of 2 runs, 1 loop each)
+
+Finish!
+
